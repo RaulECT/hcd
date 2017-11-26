@@ -10,6 +10,7 @@ import FormView from './views/FormView'
 import SignInView from './views/SignInView'
 import LogInView from './views/LogInView'
 import HomeNavBarView from './views/HomeNavBarView'
+import EventsListView from './views/EventsListView'
 import {
   Platform,
   StyleSheet,
@@ -42,7 +43,8 @@ export default class App extends Component<{}> {
       //<FormView/>
       //<SignInView/>
       //<LogInView/>
-      <HomeNavBarView/>
+      //<HomeNavBarView/>
+      <EventsListView/>
     );
   }
 }
