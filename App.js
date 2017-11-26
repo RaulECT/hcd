@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import HomeScreenview from './views/HomeScreenView'
 import FormView from './views/FormView'
 import SignInView from './views/SignInView'
+import LogInView from './views/LogInView'
 import {
   Platform,
   StyleSheet,
@@ -38,7 +39,8 @@ export default class App extends Component<{}> {
       </View>*/
       //<HomeScreenview/>
       //<FormView/>
-      <SignInView/>
+      //<SignInView/>
+      <LogInView/>
     );
   }
 }

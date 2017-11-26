@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import FormView from './FormView'
 
-class SignInView extends Component {
+class LogInView extends Component {
   render() {
     return(
       <FormView
-        title = "Sign In"
+        title = "Log In"
       />
     )
   }
 }
 
-export default SignInView
+export default LogInView
