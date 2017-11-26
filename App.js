@@ -9,6 +9,7 @@ import HomeScreenview from './views/HomeScreenView'
 import FormView from './views/FormView'
 import SignInView from './views/SignInView'
 import LogInView from './views/LogInView'
+import AddEventView from './views/AddEventView'
 import HomeNavBarView from './views/HomeNavBarView'
 import EventsListView from './views/EventsListView'
 import {
@@ -44,7 +45,8 @@ export default class App extends Component<{}> {
       //<SignInView/>
       //<LogInView/>
       //<HomeNavBarView/>
-      <EventsListView/>
+      //<EventsListView/>
+      <AddEventView/>
     );
   }
 }
