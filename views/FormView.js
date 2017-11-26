@@ -8,11 +8,17 @@ import {
   TouchableOpacity
 } from 'react-native';
 
+const signInText = "You don´t have an account? "
+const logInText = "You have an account? "
+
 class FormView extends Component {
   render() {
+    let text = this.props.title == 'Sign In' ? logInText: signInText
+    let option = this.props.title == 'Sign In' ? 'Log In': 'Sign In'
+
     return(
       <View style={styles.container}>
-        <Text style={styles.title}>Text Here</Text>
+        <Text style={styles.title}> {this.props.title} </Text>
 
         <View style={styles.fieldsView}>
           <TextInput
@@ -28,11 +34,14 @@ class FormView extends Component {
 
         <TouchableOpacity style={styles.button}>
           <View>
-            <Text style={styles.buttonText}>Text Here</Text>
+            <Text style={styles.buttonText}>{this.props.title}</Text>
           </View>
         </TouchableOpacity>
 
-        <Text style={styles.footerText}>Some random text? <Text style={styles.testOption}>text</Text> </Text>
+        <Text style={styles.footerText}>
+          {text}
+          <Text style={styles.testOption}>{option}</Text> 
+        </Text>
       </View>
     )
   }
