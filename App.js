@@ -12,6 +12,7 @@ import LogInView from './views/LogInView'
 import AddEventView from './views/AddEventView'
 import HomeNavBarView from './views/HomeNavBarView'
 import EventsListView from './views/EventsListView'
+import EventDetailView from './views/EventDetailView'
 import {
   Platform,
   StyleSheet,
@@ -46,7 +47,8 @@ export default class App extends Component<{}> {
       //<LogInView/>
       //<HomeNavBarView/>
       //<EventsListView/>
-      <AddEventView/>
+      //<AddEventView/>
+      <EventDetailView/>
     );
   }
 }
