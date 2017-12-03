@@ -1,6 +1,7 @@
 import React from 'react';
 import EventsListView from './EventsListView'
 import FriendsListView from './FriendsListView'
+import AddEventView from './AddEventView'
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
@@ -15,7 +16,8 @@ export default class App extends React.Component {
     return(
       
       //<EventsListView/>
-     <FriendsListView/>
+     //<FriendsListView/>
+     <AddEventView/>
     )
  
     
