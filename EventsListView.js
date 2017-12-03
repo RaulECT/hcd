@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HomeNavBarView from './HomeNavBarView'
 import EventRowView from './EventRowView'
+import SearchView from './SearchView'
 import searchIcon from './resources/musica-searcher.png'
 import {
   Platform,
@@ -29,18 +30,9 @@ class EventsListView extends Component {
         <HomeNavBarView></HomeNavBarView>
         <View style={styles.container}>
 
-          <View style={styles.searchFormGroup}>
-            <Image 
-              style={styles.searchIcon} 
-              source={searchIcon}
-            />
-            
-            <TextInput 
-              style={styles.searchField} 
-              placeholder="Search Event..." 
-              underlineColorAndroid='transparent' 
-            />
-          </View>
+          <SearchView
+            placeholder="Search Events..."
+          />
 
           <ScrollView style={styles.eventsList}>
             {
@@ -71,24 +63,6 @@ const styles = StyleSheet.create( {
     paddingTop: 16,
     paddingLeft: 26,
     paddingRight: 26,
-  },
-  searchFormGroup:{
-    display: 'flex',
-    flexDirection: 'row'
-  },
-  searchIcon: {
-    width: 21,
-    height: 21,
-    marginRight: 3
-  },
-  searchField:{
-    width: '80%',
-    marginLeft: 3,
-    marginTop: -4
-  },
-  eventsList: {
-    marginTop: 20,
-    marginBottom: 20
   }
 } )
 

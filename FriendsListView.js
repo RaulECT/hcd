@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import searchIcon from './resources/musica-searcher.png'
 import GeneralNavBarView from './GeneralNavBarView'
 import FriendRowView from './FriendRowView'
+import SearchView from './SearchView'
 import {
   Platform,
   StyleSheet,
@@ -30,18 +31,9 @@ class FriendListView extends Component {
         />
 
         <View style={styles.container}>
-          <View style={styles.searchFormGroup}>
-            <Image 
-              style={styles.searchIcon} 
-              source={searchIcon}
-            />
-            
-            <TextInput 
-              style={styles.searchField} 
-              placeholder="Search Friend..." 
-              underlineColorAndroid='transparent' 
-            />
-          </View>
+          <SearchView
+            placeholder="Search Friends..."
+          />
 
           <ScrollView style={styles.friendsList}>
             {
@@ -70,20 +62,6 @@ const styles = StyleSheet.create( {
     paddingTop: 16,
     paddingLeft: 26,
     paddingRight: 26,
-  },
-  searchFormGroup:{
-    display: 'flex',
-    flexDirection: 'row'
-  },
-  searchIcon: {
-    width: 21,
-    height: 21,
-    marginRight: 3
-  },
-  searchField:{
-    width: '80%',
-    marginLeft: 3,
-    marginTop: -4
   },
   friendsList:{
     marginTop: 20,

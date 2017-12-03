@@ -16,8 +16,8 @@ export default class App extends React.Component {
     return(
       
       //<EventsListView/>
-     //<FriendsListView/>
-     <AddEventView/>
+     <FriendsListView/>
+     //<AddEventView/>
     )
  
     
